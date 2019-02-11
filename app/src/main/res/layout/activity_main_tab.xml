@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.ljgandroid.widget.BottomTabView
+        android:id="@+id/bottom_tab_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white">
+
+        <RadioButton
+            android:id="@+id/radio_button_home"
+            style="@style/RadioGroupButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/main_index_home_bg"
+            android:focusable="false"
+            android:text="首页"
+            android:textSize="10sp" />
+
+
+        <RadioButton
+            android:id="@+id/radio_button_discovery"
+            style="@style/RadioGroupButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/main_index_type_bg"
+            android:focusable="false"
+            android:text="财富"
+            android:textSize="10sp" />
+
+
+        <RadioButton
+            android:id="@+id/radio_button_attention"
+            style="@style/RadioGroupButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/main_index_mystore_bg"
+            android:focusable="false"
+            android:text="口碑"
+            android:textSize="10sp" />
+
+
+        <RadioButton
+            android:id="@+id/radio_button_profile"
+            style="@style/RadioGroupButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/main_index_cart_bg"
+            android:focusable="false"
+            android:text="朋友"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/main_tab_person"
+            style="@style/RadioGroupButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/main_index_order"
+            android:focusable="false"
+            android:text="我的"
+            android:textSize="10sp" />
+
+
+    </com.ljgandroid.widget.BottomTabView>
+
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_tab_view"
+        android:layout_marginBottom="1dp"
+       />
+
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="#3399ff"
+        android:layout_below="@id/content"
+        />
+
+
+</RelativeLayout>
